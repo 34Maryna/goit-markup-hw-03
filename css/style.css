@@ -1,0 +1,201 @@
+:root {
+--primary-header-color: #212121;
+--second-color: #757575;
+--accent-color: #2196F3;
+--primary-color: #212121;
+--primary-text-color: #757575;
+--bg-color: #FFFFFF;
+--btn-color: #2196F3;
+--second-text-color: #FFFFFF; }
+
+p, h1, h2, h3, h4, h5, h6{
+margin: 0px;
+}
+
+
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+background-color: var(--bg-color);
+}
+
+    /*---UNIVERSAL CLASSES---*/
+.link {
+text-decoration: none;
+}
+.list {
+list-style: none;
+}
+.links {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+.title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-header-color);    
+}
+.text {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;    
+}
+.logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+}    
+    /*---HEADER---*/
+.header-logo {
+color: #000000;    
+}
+.accent {
+color:#2196F3 ;
+}    
+.current {
+color: var(--accent-color);    
+}      
+.header-link {
+color: var(--primary-color);
+}
+.header-link:hover,
+.header-link:focus {
+color: var(--accent-color);    
+}
+.mail,
+.tel {
+color: var(--second-color);
+}
+
+    /*---HERO---*/
+.hero {
+background-color: var(--primary-header-color);  
+}      
+.hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--second-text-color);   
+}      
+.hero-btn {
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+cursor: pointer;
+letter-spacing: 0.06em;    
+color: var(--bg-color);
+background-color: var(--btn-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+background-color: #188CE8;
+}
+
+/*---PRIVILEGE---*/
+.privilege-title {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+.privilege-subtitle {
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--primary-header-color);    
+}
+.privilege-text {
+color: var(--second-color);
+}
+
+/*---WORK---*/
+
+/*---TEAM---*/
+.team {
+background-color: #F5F4FA;    
+}
+.team-subtitle {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+color: var(--primary-color);    
+}
+.team-info {
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+color: var(--second-color);    
+}
+
+/*---FOOTER---*/
+.footer {
+background-color: #2F303A;    
+}
+.footer-logo {
+color: var(--bg-color);    
+}
+.footer-links {
+font-style: normal;
+color: var(--bg-color);
+}
+.footer-address {
+color: rgba(255, 255, 255, 0.6);    
+}
+.footer-links:hover,
+.footer-links:focus {
+color: var(--accent-color);    
+}
+
+/*---PORTFOLIO---*/
+.portfolio-btn {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+cursor: pointer;
+color: var(--primary-color);
+}
+.current {
+color: var(--accent-color);    
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+color: var(--second-text-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+background: var(--btn-color);
+}
+.portfolio-text {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--primary-color);    
+}
+.portfolio-info {
+font-size: 16px;
+line-height: 1.88;
+color: var(--second-color);    
+}
