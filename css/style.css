@@ -8,11 +8,16 @@
 --btn-color: #2196F3;
 --second-text-color: #FFFFFF; }
 
-p, h1, h2, h3, h4, h5, h6{
+p, h1, h2, h3, h4, h5, h6 {
 margin: 0px;
 }
-
-
+ul {
+margin: 0px;
+padding-left: 0px;    
+}
+img {
+display: block;    
+}  
 body {
 font-family: 'Roboto', sans-serif;
 font-size: 14px;
@@ -23,6 +28,16 @@ background-color: var(--bg-color);
 }
 
     /*---UNIVERSAL CLASSES---*/
+.container {
+width: 1200px;
+padding: 0px 15px; 
+margin: 0px auto;   
+}
+.section {
+padding-top: 94px; 
+padding-bottom: 94px;   
+} 
+ 
 .link {
 text-decoration: none;
 }
@@ -56,21 +71,44 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 }    
     /*---HEADER---*/
+.header .container {
+display: flex;
+align-items: center;    
+}   
 .header-logo {
-color: #000000;    
+color: #000000; 
+padding-top: 24px; 
+padding-bottom: 25px;
+display: block;  
+margin-right: 93px;
 }
 .accent {
 color:#2196F3 ;
 }    
 .current {
 color: var(--accent-color);    
-}      
+} 
+.header-list,
+.header-contact {
+display: flex;    
+}
+.header-cont {
+margin-left: auto;    
+}     
 .header-link {
 color: var(--primary-color);
+padding-top: 32px;
+padding-bottom: 32px;
+}
+.header-list .hdr:not(:last-child) {
+margin-right: 50px;    
 }
 .header-link:hover,
 .header-link:focus {
 color: var(--accent-color);    
+}
+.tel {
+margin-left: 50px;    
 }
 .mail,
 .tel {
@@ -80,15 +118,30 @@ color: var(--second-color);
     /*---HERO---*/
 .hero {
 background-color: var(--primary-header-color);  
-}      
+text-align: center;
+} 
+.hero-section {
+max-width: 1600px; 
+height: 600px;
+margin-left: auto;  
+margin-right: auto; 
+} 
+.hero-container {
+padding: 200px 252px 200px 252px;    
+margin-bottom: 0px;
+} 
 .hero-title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: var(--second-text-color);   
+text-align: center;
+color: var(--second-text-color);
+margin-bottom: 30px; 
+max-width: 696px; 
+height: 120px;
+        
 }      
 .hero-btn {
 font-family: inherit;
@@ -99,6 +152,13 @@ cursor: pointer;
 letter-spacing: 0.06em;    
 color: var(--bg-color);
 background-color: var(--btn-color);
+border-radius: 4px;
+padding: 10px 32px;
+min-width: 216px;
+height: 50px;
+text-align: center;
+border: 1px solid transparent;
+display: inline-block;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -106,6 +166,9 @@ background-color: #188CE8;
 }
 
 /*---PRIVILEGE---*/
+.privilege {
+padding: 94px 0px;
+}
 .privilege-title {
 position: absolute;
 width: 1px;
@@ -119,21 +182,58 @@ clip-path: inset(100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
 }
+.list-privilege {
+display: flex;
+flex-wrap: wrap;
+margin: -15px; 
+}
+.privilege-link {
+width: 270px;
+margin: 15px;
+    
+}
 .privilege-subtitle {
 font-weight: 700;
 line-height: 1.14;
 text-transform: uppercase;
 color: var(--primary-header-color);    
+margin-bottom: 10px;
 }
 .privilege-text {
 color: var(--second-color);
 }
 
 /*---WORK---*/
+.list-work {
+display: flex;
+column-gap: 30px;
+}
+.work {
+padding-bottom: 94px;
+}
+.title {
+margin-bottom: 50px;
+}
 
 /*---TEAM---*/
 .team {
 background-color: #F5F4FA;    
+padding: 94px 0 ;
+}
+.title {
+margin-bottom: 50px;    
+}
+.team-container {
+display: flex;
+}
+.team-items:not(:last-child){
+margin-right: 30px;    
+}
+.team-items {
+width: calc((100% - 60px) / 3);
+background: var(--bg-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px; 
 }
 .team-subtitle {
 font-weight: 500;
@@ -141,20 +241,38 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 color: var(--primary-color);    
+margin-top: 30px;
+margin-bottom: 10px;
 }
 .team-info {
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
 color: var(--second-color);    
+margin-bottom: 30px;
 }
 
 /*---FOOTER---*/
+.footer .container {
+display: flex; 
+display: block;
+align-items: baseline;
+}
 .footer {
-background-color: #2F303A;    
+background-color: #2F303A; 
+padding: 60px 0;   
 }
 .footer-logo {
-color: var(--bg-color);    
+display: inline-block;
+color: var(--bg-color); 
+padding-bottom: 20px;
+}
+.address {
+display: block; 
+justify-items: flex-start;   
+}
+.footer-items:not(:last-child) {
+padding-bottom: 9px;    
 }
 .footer-links {
 font-style: normal;

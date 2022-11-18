@@ -15,29 +15,36 @@
 <!--Шапка сайту-->
 <body>
    <header class="header">
-    <a href="index.html" class000="header-logo logo link"><span class="accent logo link">Web</span>Studio</a>
+   <div class="container">
+   <a href="index.html" class="header-logo logo link"><span class="accent logo link">Web</span>Studio</a>
    <nav class="header-nav">
       <ul class="header-list list">
-         <li><a href="" class="header-link link current links">Студія</a></li>
-         <li><a href="./portfolio.html" class="header-link link links">Портфоліо</a></li>
-         <li><a href="" class="header-link link links">Контакти</a></li>
+         <li class="hdr"><a href="" class="header-link link current links">Студія</a></li>
+         <li class="hdr"><a href="./portfolio.html" class="header-link link links">Портфоліо</a></li>
+         <li class="hdr"><a href="" class="header-link link links">Контакти</a></li>
        </ul>
      </nav>
+     <div class="header-cont">
      <ul class="header-contact list">
        <li><a href="mailto:info@devstudio.com" class="mail header-link link links">info@devstudio.com</a></li>
        <li><a href="tel:+380961111111" class="tel header-link link links">+38 096 111 11 11</a></li>
      </ul>
+    </div>
+    </div>
     </header> 
 
 <!--Рішення бізнесу--> 
    <main>
-    <section class="hero">
+    <section class="hero hero-section">
+      <div class="container hero-container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero-btn">Замовити послугу</button>
-    </section>
+      </div>
+      </section>
 
 <!--Привілегії-->  
     <section class="privilege">
+    <div class="container">
     <h2 class="privilege-title">Привілегії</h2>
     <ul class="list-privilege list">
       <li class="privilege-link link">
@@ -57,10 +64,12 @@
         <p class="privilege-text text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
       </li>
     </ul>
+  </div>
     </section>
 
 <!--Чим займаємось-->
     <section class="work">
+    <div class="container">  
     <h2 class="title">Чим ми займаємося</h2>
     <ul class="list-work list">
       <li class="work-items"> 
@@ -73,11 +82,14 @@
         <img src="./img/work-3.jpg" alt="Планшет" width="370">
       </li>
     </ul>
+  </div>
     </section>
 <!--Команда-->
     <section class="team">
+      <div class="container">
       <h2 class="title">Наша команда</h2>
       <ul class="list-team list">
+        <div class="team-container">
         <li class="team-items link">
           <img src="./img/team-1.jpg" alt="Команда1" width="270">
           <h3 class="team-subtitle">Ігор Дем'яненко</h3>
@@ -98,13 +110,16 @@
           <h3 class="team-subtitle">Михайло Єрмаков</h3>
           <p class="team-info">UI Designer</p>
         </li>
+      </div>
       </ul>
+    </div>
     </section>
    </main>
 <!--Футер-->
    <footer class="footer">
+    <div class="container">
     <a href="/" class="footer-logo logo link"><span class="accent logo link">Web</span>Studio</a>
-    <address>
+    <address class="address">
       <ul class="footer-list list">
         <li class="footer-items"><a href="https://goo.gl/maps/qDodeFptJs4gTQPLA" target="_blank" 
           rel="noreferrer nofollow noopener" class="footer-links link text">м. Київ, пр-т Лесі Українки, 26</a></li>
@@ -112,6 +127,7 @@
         <li class="footer-items"><a href="tel:+380961111111" class="footer-links footer-address link text">+38 096 111 11 11</a></li>
       </ul>
     </address>
+  </div>
    </footer>
 </body>
 </html>
