@@ -99,15 +99,19 @@ color: var(--accent-color);
 .header-contact {
 display: flex; 
 }
+.header-list .link,
+.header-contact .link {
+display: block;
+padding-top: 32px;   
+padding-bottom: 32px; 
+}
 .header-cont {
 margin-left: auto;
 }  
 .header-link {
 color: var(--primary-color);
-padding-top: 32px;
-padding-bottom: 32px;
 }
-.header-list .hdr:not(:last-child) {
+.header-list > li:not(:last-child){
 margin-right: 50px;    
 }
 .header-link:hover,
@@ -163,9 +167,9 @@ padding: 10px 32px;
 min-width: 216px;
 height: 50px;
 text-align: center;
-border: 1px solid transparent;
 display: inline-block;
 margin-top: 30px;
+border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus {
