@@ -7,7 +7,14 @@
 --bg-color: #FFFFFF;
 --btn-color: #2196F3;
 --second-text-color: #FFFFFF; 
---second-bg-color: #F5F4FA; }
+--second-bg-color: #F5F4FA; 
+--border-color: #EEEEEE; 
+--second-border-color: #ECECEC;
+--footer-color: #2F303A;
+--second-btn-color: #188CE8;
+--logo-color: #000000;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
 margin: 0px;
 }
@@ -76,14 +83,14 @@ display: flex;
 align-items: center;    
 }   
 .header-logo {
-color: #000000; 
+color: var(--logo-color); 
 padding-top: 24px; 
 padding-bottom: 25px;
 display: block;  
 margin-right: 93px;
 }
 .accent {
-color:#2196F3 ;
+color:var(--accent-color) ;
 }    
 .current {
 color: var(--accent-color);    
@@ -91,14 +98,14 @@ color: var(--accent-color);
 .header-list,
 .header-contact {
 display: flex; 
-margin-top: 32px;
-margin-bottom: 32px;    
 }
 .header-cont {
 margin-left: auto;
 }  
 .header-link {
 color: var(--primary-color);
+padding-top: 32px;
+padding-bottom: 32px;
 }
 .header-list .hdr:not(:last-child) {
 margin-right: 50px;    
@@ -119,17 +126,16 @@ color: var(--second-color);
 .hero {
 background-color: var(--primary-header-color);  
 text-align: center;
-padding: 0px;
 } 
 .hero-section {
 max-width: 1600px; 
 height: 600px;
 margin-left: auto;
 margin-right: auto;
+padding: 200px 0px;
 } 
 .hero-container {
 margin-bottom: 0px;
-padding: 200px 277px 200px 277px;
 } 
 .hero-title {
 font-weight: 900;
@@ -139,9 +145,8 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 text-align: center;
 color: var(--second-text-color);
-margin-bottom: 30px; 
 max-width: 696px; 
-height: 120px;
+margin: 0px auto;
 }      
 .hero-btn {
 font-family: inherit;
@@ -152,6 +157,7 @@ cursor: pointer;
 letter-spacing: 0.06em;    
 color: var(--bg-color);
 background-color: var(--btn-color);
+
 border-radius: 4px;
 padding: 10px 32px;
 min-width: 216px;
@@ -159,10 +165,11 @@ height: 50px;
 text-align: center;
 border: 1px solid transparent;
 display: inline-block;
+margin-top: 30px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-background-color: #188CE8;
+background-color: var(--second-btn-color);
 }
 
 /*---PRIVILEGE---*/
@@ -256,7 +263,7 @@ display: block;
 align-items: baseline;
 }
 .footer {
-background-color: #2F303A; 
+background-color: var(--footer-color); 
 padding: 60px 0;   
 }
 .footer-logo {
@@ -285,7 +292,7 @@ color: var(--accent-color);
 
 /*---PORTFOLIO---*/
 .bort {
-border-bottom: 1px solid #ECECEC;
+border-bottom: 1px solid var(--second-border-color);
 }
 .portfolio {
 padding: 94px 0;    
@@ -347,7 +354,9 @@ margin-bottom: 0px;
 .port-blok {
 padding: 20px 24px;
 background: var(--second-text-color);
-border: 1px solid #EEEEEE;
+border-bottom: 1px solid var(--border-color);
+border-left: 1px solid var(--border-color);
+border-right: 1px solid var(--border-color);
 }
 .portfolio-text {
 font-weight: 700;
