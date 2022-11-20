@@ -6,8 +6,8 @@
 --primary-text-color: #757575;
 --bg-color: #FFFFFF;
 --btn-color: #2196F3;
---second-text-color: #FFFFFF; }
-
+--second-text-color: #FFFFFF; 
+--second-bg-color: #F5F4FA; }
 p, h1, h2, h3, h4, h5, h6 {
 margin: 0px;
 }
@@ -90,15 +90,15 @@ color: var(--accent-color);
 } 
 .header-list,
 .header-contact {
-display: flex;    
+display: flex; 
+margin-top: 32px;
+margin-bottom: 32px;    
 }
 .header-cont {
-margin-left: auto;    
-}     
+margin-left: auto;
+}  
 .header-link {
 color: var(--primary-color);
-padding-top: 32px;
-padding-bottom: 32px;
 }
 .header-list .hdr:not(:last-child) {
 margin-right: 50px;    
@@ -119,16 +119,17 @@ color: var(--second-color);
 .hero {
 background-color: var(--primary-header-color);  
 text-align: center;
+padding: 0px;
 } 
 .hero-section {
 max-width: 1600px; 
 height: 600px;
-margin-left: auto;  
-margin-right: auto; 
+margin-left: auto;
+margin-right: auto;
 } 
 .hero-container {
-padding: 200px 252px 200px 252px;    
 margin-bottom: 0px;
+padding: 200px 277px 200px 277px;
 } 
 .hero-title {
 font-weight: 900;
@@ -141,7 +142,6 @@ color: var(--second-text-color);
 margin-bottom: 30px; 
 max-width: 696px; 
 height: 120px;
-        
 }      
 .hero-btn {
 font-family: inherit;
@@ -184,13 +184,10 @@ overflow: hidden;
 }
 .list-privilege {
 display: flex;
-flex-wrap: wrap;
-margin: -15px; 
+column-gap: 30px; 
 }
 .privilege-link {
 width: 270px;
-margin: 15px;
-    
 }
 .privilege-subtitle {
 font-weight: 700;
@@ -217,7 +214,7 @@ margin-bottom: 50px;
 
 /*---TEAM---*/
 .team {
-background-color: #F5F4FA;    
+background-color: var(--second-bg-color);    
 padding: 94px 0 ;
 }
 .title {
@@ -265,14 +262,14 @@ padding: 60px 0;
 .footer-logo {
 display: inline-block;
 color: var(--bg-color); 
-padding-bottom: 20px;
+margin-bottom: 20px;
 }
 .address {
 display: block; 
 justify-items: flex-start;   
 }
 .footer-items:not(:last-child) {
-padding-bottom: 9px;    
+margin-bottom: 9px;    
 }
 .footer-links {
 font-style: normal;
@@ -340,9 +337,6 @@ width: 370px;
 width:calc((100% - 60px)/3);
 margin-right: 30px;
 margin-bottom: 30px;
-
-background: var(--second-text-color);
-border: 1px solid #EEEEEE;
 } 
 .port-item:nth-child(3n) {
 margin-right: 0px;    
@@ -351,8 +345,9 @@ margin-right: 0px;
 margin-bottom: 0px;    
 }
 .port-blok {
-display: inline-block;
 padding: 20px 24px;
+background: var(--second-text-color);
+border: 1px solid #EEEEEE;
 }
 .portfolio-text {
 font-weight: 700;
