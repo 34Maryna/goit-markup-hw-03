@@ -125,7 +125,8 @@ margin-left: 50px;
 .tel {
 color: var(--second-color);
 }
-    /*---HERO---*/
+    
+/*---HERO---*/
 .hero {
 background-color: var(--primary-header-color);  
 text-align: center;
